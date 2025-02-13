@@ -16,7 +16,7 @@ const Footer = () => {
     { name: "Help", link: "#" },
     { name: "FAQs", link: "#" },
     { name: "Terms & Conditions", link: "/termsandcon" },
-    { name: "Privacy Policy", link: "#" },
+    { name: "Privacy Policy", link: "/privacy-policy" },
   ];
   return (
     <>

@@ -9,15 +9,13 @@ import Header from "./components/Header";
 import Pricing from "./components/Pricing/Pricing";
 import WhyChooseUs from "./components/WhyChooseUse/WhyChooseUs";
 import TermsAndCon from "./components/TermsAndCon";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 function App() {
   return (
     <BrowserRouter>
-      {/* Always render the Header */}
       <Header />
-
       <Routes>
-        {/* Route for Terms and Conditions, only show Header and Footer */}
         <Route
           path="/termsandcon"
           element={
@@ -26,8 +24,15 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/privacy-policy"
+          element={
+            <>
+              <PrivacyPolicy />
+            </>
+          }
+        />
 
-        {/* Default Route, Show other components */}
         <Route
           path="/"
           element={
@@ -43,7 +48,6 @@ function App() {
         />
       </Routes>
 
-      {/* Always render the Footer */}
       <Footer />
     </BrowserRouter>
   );

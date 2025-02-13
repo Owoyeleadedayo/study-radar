@@ -1,6 +1,6 @@
-import { Flex, Text } from "@chakra-ui/react"
+import { Flex, ListItem, Text, UnorderedList } from "@chakra-ui/react"
 
-const TermsAndCon = () => {
+const PrivacyPolicy = () => {
   return (
     <>
       <Flex width={"100%"} height={"100%"} direction={"column"} mt={"90px"}>
@@ -17,7 +17,7 @@ const TermsAndCon = () => {
             fontSize={"48px"}
             color={"#191E33CC"}
           >
-            Terms and Conditions
+            Privacy Policy
           </Text>
         </Flex>
         <Flex
@@ -25,7 +25,7 @@ const TermsAndCon = () => {
           height={"100%"}
           px={"100px"}
           pt={"50px"}
-          pb={'120px'}
+          pb={"120px"}
           bgColor={"#F9F9F9"}
           direction={"column"}
           gap={"20px"}
@@ -48,7 +48,7 @@ const TermsAndCon = () => {
                 fontSize={"20px"}
                 color={"#191E33CC"}
               >
-                Acceptance of Terms
+                INTRODUCTION
               </Text>
             </Flex>
             <Flex>
@@ -58,40 +58,13 @@ const TermsAndCon = () => {
                 fontSize={"18px"}
                 color={"#191E33"}
               >
-                By accessing or using,{" "}
-                <Text as={"span"} fontWeight={700} textDecoration={"underline"}>
-                  {" "}
-                  StudyRadar.ai,
-                </Text>{" "}
-                you agree to be bound by these Terms and Conditions. If you do
-                not agree, please do not use our services.
-              </Text>
-            </Flex>
-          </Flex>
-          <Flex direction={"column"} gap={"5px"}>
-            <Flex>
-              <Text
-                fontFamily={"Geist"}
-                fontWeight={700}
-                fontSize={"20px"}
-                color={"#191E33CC"}
-              >
-                Use of Services
-              </Text>
-            </Flex>
-            <Flex>
-              <Text
-                fontFamily={"Geist"}
-                fontWeight={400}
-                fontSize={"18px"}
-                color={"#191E33"}
-              >
+                Welcome to
                 <Text as={"span"} fontWeight={700} textDecoration={"underline"}>
                   StudyRadar.ai
                 </Text>
-                provides an AI-powered platform for pharmacy and other medical
-                professions board/licensing exam preparation. You agree to use
-                our services lawfully and not for any prohibited activities.
+                Your privacy is important to us. This Privacy Policy explains
+                how we collect, use, disclose, and safeguard your information
+                when you visit our website and use our services.
               </Text>
             </Flex>
           </Flex>
@@ -102,8 +75,9 @@ const TermsAndCon = () => {
                 fontWeight={700}
                 fontSize={"20px"}
                 color={"#191E33CC"}
+                textTransform={"uppercase"}
               >
-                User Accounts
+                Information We Collect
               </Text>
             </Flex>
             <Flex>
@@ -113,10 +87,10 @@ const TermsAndCon = () => {
                 fontSize={"18px"}
                 color={"#191E33"}
               >
-                You may need to create an account to access certain features.
-                You are responsible for maintaining the confidentiality of your
-                account and password. You agree to notify us immediately of any
-                unauthorized use of your account.
+                We may collect personal information that you provide directly,
+                such as your name, email address, and payment details, as well
+                as non-personal data, including device information and usage
+                statistics.
               </Text>
             </Flex>
           </Flex>
@@ -127,112 +101,82 @@ const TermsAndCon = () => {
                 fontWeight={700}
                 fontSize={"20px"}
                 color={"#191E33CC"}
+                textTransform={"uppercase"}
               >
-                Intellectual Property
+                How We Use Your Information
               </Text>
             </Flex>
-            <Flex>
-              <Text
-                fontFamily={"Geist"}
-                fontWeight={400}
-                fontSize={"18px"}
-                color={"#191E33CC"}
-              >
-                All content, including text, graphics, and software, is the
-                property of{" "}
-                <Text as={"span"} textDecoration={"underline"}>
-                  {" "}
-                  StudyRadar.ai
-                </Text>{" "}
-                and is protected by intellectual property laws. Unauthorized
-                reproduction, distribution, or modification is strictly
-                prohibited.
-              </Text>
-            </Flex>
-          </Flex>
-          <Flex direction={"column"} gap={"5px"}>
-            <Flex>
-              <Text
-                fontFamily={"Geist"}
-                fontWeight={700}
-                fontSize={"20px"}
-                color={"#191E33CC"}
-              >
-                Payment and Subscription
-              </Text>
-            </Flex>
-            <Flex>
-              <Text
-                fontFamily={"Geist"}
-                fontWeight={400}
-                fontSize={"18px"}
-                color={"#191E33"}
-              >
-                Certain features may require payment. By subscribing, you agree
-                to our billing policies. Payments are non-refundable except
-                where required by law.
-              </Text>
-            </Flex>
-          </Flex>
-          <Flex direction={"column"} gap={"5px"}>
-            <Flex>
-              <Text
-                fontFamily={"Geist"}
-                fontWeight={700}
-                fontSize={"20px"}
-                color={"#191E33CC"}
-              >
-                Limitation of Liability
-              </Text>
-            </Flex>
-            <Flex>
-              <Text
-                fontFamily={"Geist"}
-                fontWeight={400}
-                fontSize={"18px"}
-                color={"#191E33"}
-              >
-                <Text as={"span"} fontWeight={700} textDecoration={"underline"}>
-                  StudyRadar.ai
-                </Text>
-                is provided "as is." We make no warranties, express or implied,
-                regarding the accuracy, reliability, or availability of our
-                services. We are not liable for any direct, indirect,
-                incidental, or consequential damages arising from your use of
-                our services.
-              </Text>
-            </Flex>
-          </Flex>
-          <Flex direction={"column"} gap={"5px"}>
-            <Flex>
-              <Text
-                fontFamily={"Geist"}
-                fontWeight={700}
-                fontSize={"20px"}
-                color={"#191E33CC"}
-              >
-                Termination
-              </Text>
-            </Flex>
-            <Flex>
-              <Text
-                fontFamily={"Geist"}
-                fontWeight={400}
-                fontSize={"18px"}
-                color={"#191E33"}
-              >
-                We reserve the right to suspend or terminate your access if you
-                violate these terms or engage in any conduct that we determine
-                is harmful to{" "}
+            <Flex direction={"column"}>
+              <Flex>
                 <Text
-                  as={"span"}
-                  textDecoration={"underline"}
-                  fontWeight={700}
-                  fontSize={"20px"}
+                  fontFamily={"Geist"}
+                  fontWeight={400}
+                  fontSize={"18px"}
+                  color={"#191E33"}
                 >
-                  StudyRadar.ai
-                </Text>{" "}
-                or its users.
+                  Your information is used to:
+                </Text>
+              </Flex>
+              <Flex pl={"20px"}>
+                <UnorderedList>
+                  <ListItem
+                    fontFamily={"Geist"}
+                    fontWeight={400}
+                    fontSize={"18px"}
+                    color={"#191E33"}
+                  >
+                    Lorem ipsum dolor sit amet
+                  </ListItem>
+                  <ListItem
+                    fontFamily={"Geist"}
+                    fontWeight={400}
+                    fontSize={"18px"}
+                    color={"#191E33"}
+                  >
+                    Consectetur adipiscing elit
+                  </ListItem>
+                  <ListItem
+                    fontFamily={"Geist"}
+                    fontWeight={400}
+                    fontSize={"18px"}
+                    color={"#191E33"}
+                  >
+                    Integer molestie lorem at massa
+                  </ListItem>
+                  <ListItem
+                    fontFamily={"Geist"}
+                    fontWeight={400}
+                    fontSize={"18px"}
+                    color={"#191E33"}
+                  >
+                    Facilisis in pretium nisl aliquet
+                  </ListItem>
+                </UnorderedList>
+              </Flex>
+            </Flex>
+          </Flex>
+          <Flex direction={"column"} gap={"5px"}>
+            <Flex>
+              <Text
+                fontFamily={"Geist"}
+                fontWeight={700}
+                fontSize={"20px"}
+                color={"#191E33CC"}
+                textTransform={"uppercase"}
+              >
+                Information Sharing and Disclosure
+              </Text>
+            </Flex>
+            <Flex>
+              <Text
+                fontFamily={"Geist"}
+                fontWeight={400}
+                fontSize={"18px"}
+                color={"#191E33"}
+              >
+                We do not sell your personal data. We may share information with
+                trusted third-party service providers for operational purposes,
+                compliance with legal obligations, or protection of rights.
               </Text>
             </Flex>
           </Flex>
@@ -243,8 +187,9 @@ const TermsAndCon = () => {
                 fontWeight={700}
                 fontSize={"20px"}
                 color={"#191E33CC"}
+                textTransform={"uppercase"}
               >
-                Governing Law
+                Data Security
               </Text>
             </Flex>
             <Flex>
@@ -254,9 +199,8 @@ const TermsAndCon = () => {
                 fontSize={"18px"}
                 color={"#191E33"}
               >
-                These Terms are governed by the laws of Canada and other
-                relevant jurisdictions, including the USA and UK. Any disputes
-                shall be resolved in the courts of the applicable jurisdiction.
+                We implement industry-standard measures to protect your data
+                from unauthorized access, disclosure, or alteration.
               </Text>
             </Flex>
           </Flex>
@@ -267,8 +211,9 @@ const TermsAndCon = () => {
                 fontWeight={700}
                 fontSize={"20px"}
                 color={"#191E33CC"}
+                textTransform={"uppercase"}
               >
-                Changes to Terms
+                Your Rights
               </Text>
             </Flex>
             <Flex>
@@ -278,9 +223,56 @@ const TermsAndCon = () => {
                 fontSize={"18px"}
                 color={"#191E33"}
               >
-                We may update these Terms at any time. Continued use of our
-                services constitutes acceptance of the revised Terms. We will
-                notify users of significant changes where applicable.
+                You have the right to access, update, or delete your personal
+                information. You may also opt out of communications at any time.
+              </Text>
+            </Flex>
+          </Flex>
+          <Flex direction={"column"} gap={"5px"}>
+            <Flex>
+              <Text
+                fontFamily={"Geist"}
+                fontWeight={700}
+                fontSize={"20px"}
+                color={"#191E33CC"}
+                textTransform={"uppercase"}
+              >
+                Cookies and Tracking Technologies
+              </Text>
+            </Flex>
+            <Flex>
+              <Text
+                fontFamily={"Geist"}
+                fontWeight={400}
+                fontSize={"18px"}
+                color={"#191E33"}
+              >
+                We use cookies to enhance your experience. You may modify your
+                browser settings to decline cookies.
+              </Text>
+            </Flex>
+          </Flex>
+          <Flex direction={"column"} gap={"5px"}>
+            <Flex>
+              <Text
+                fontFamily={"Geist"}
+                fontWeight={700}
+                fontSize={"20px"}
+                color={"#191E33CC"}
+                textTransform={"uppercase"}
+              >
+                Changes to This Policy
+              </Text>
+            </Flex>
+            <Flex>
+              <Text
+                fontFamily={"Geist"}
+                fontWeight={400}
+                fontSize={"18px"}
+                color={"#191E33"}
+              >
+                We reserve the right to update this Privacy Policy at any time.
+                We encourage you to review it periodically.
               </Text>
             </Flex>
           </Flex>
@@ -320,4 +312,4 @@ const TermsAndCon = () => {
   );
 }
 
-export default TermsAndCon
+export default PrivacyPolicy
