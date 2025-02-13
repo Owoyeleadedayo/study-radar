@@ -10,6 +10,7 @@ import Pricing from "./components/Pricing/Pricing";
 import WhyChooseUs from "./components/WhyChooseUse/WhyChooseUs";
 import TermsAndCon from "./components/TermsAndCon";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import FutureOfLearning from "./components/FutureOfLearning";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
               <Banner />
               <About />
               <WhyChooseUs />
+              <FutureOfLearning />
               <Pricing />
               <GetStarted />
               <Faqs />
