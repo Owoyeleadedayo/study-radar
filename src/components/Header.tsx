@@ -1,8 +1,10 @@
 import { Box, Button, Center, Divider, Flex, Image, Link, Text } from "@chakra-ui/react"
 import SRL from '../assets/images/SRLogo.png'
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
   const links = [
     { label: "About", url: "/about" },
     { label: "Why Choose Us", url: "/whyUs" },
@@ -25,7 +27,12 @@ const Header = () => {
       zIndex={100}
     >
       <Flex gap="50px" justifyContent="center" alignItems="center">
-        <Box width="69px" height="60px">
+        <Box
+          width="69px"
+          height="60px"
+          onClick={() => navigate("/")}
+          cursor={"pointer"}
+        >
           <Image
             src={SRL}
             alt="logo"
@@ -39,8 +46,8 @@ const Header = () => {
           {links.map((item, index) => (
             <Link
               key={index}
-              href={item.url} 
-              style={{ textDecoration: "none" }} 
+              href={item.url}
+              style={{ textDecoration: "none" }}
             >
               <Text
                 fontFamily="Geist"

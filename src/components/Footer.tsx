@@ -3,8 +3,12 @@ import FI from "../assets/images/FooterImg.png";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { AiFillInstagram } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate()
+
+
   const firstList = [
     { name: "Company", link: "#" },
     { name: "About", link: "#" },
@@ -33,7 +37,12 @@ const Footer = () => {
       >
         <Flex gap={"150px"}>
           <Flex direction={"column"} gap={"20px"}>
-            <Box width={"80.63px"} height={"63.81206512451172"}>
+            <Box
+              width={"80.63px"}
+              height={"63.81206512451172"}
+              cursor={"pointer"}
+              onClick={() => navigate("/")}
+            >
               <Image
                 src={FI}
                 alt="footer-image"
@@ -42,7 +51,12 @@ const Footer = () => {
                 objectFit={"contain"}
               />
             </Box>
-            <Flex justifyContent={"center"} alignItems={"center"} gap={"20px"}>
+            <Flex
+              justifyContent={"center"}
+              alignItems={"center"}
+              gap={"20px"}
+              cursor={"pointer"}
+            >
               <FaFacebookF color="#FFFFFF" fontSize={"22px"} />
               <FaTwitter color="#FFFFFF" fontSize={"24px"} />
               <BiLogoGmail color="#FFFFFF" fontSize={"30px"} />
@@ -60,7 +74,7 @@ const Footer = () => {
             ))}
           </Flex>
 
-          <Flex width={'200px'} direction={"column"} gap={"20px"}>
+          <Flex width={"200px"} direction={"column"} gap={"20px"}>
             {secList.map((item, index) => (
               <Link key={index} href={item.link} cursor={"pointer"}>
                 <Text fontFamily={"Geist"} fontWeight={500} color={"#FDFDFD"}>

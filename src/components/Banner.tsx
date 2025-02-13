@@ -1,8 +1,12 @@
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
 import B from '../assets/images/banner.png'
+import { useEffect } from "react";
 
 const Banner = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Flex
