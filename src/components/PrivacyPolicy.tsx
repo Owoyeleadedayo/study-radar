@@ -58,9 +58,9 @@ const PrivacyPolicy = () => {
                 fontSize={"18px"}
                 color={"#191E33"}
               >
-                Welcome to
+                Welcome to{" "}
                 <Text as={"span"} fontWeight={700} textDecoration={"underline"}>
-                  StudyRadar.ai
+                  StudyRadar.ai{" "}
                 </Text>
                 Your privacy is important to us. This Privacy Policy explains
                 how we collect, use, disclose, and safeguard your information
